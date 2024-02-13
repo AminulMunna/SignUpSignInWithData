@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInComplete">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/signImgCIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/signInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Sign In Details"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@+id/signImgCIV"
+        app:layout_constraintEnd_toEndOf="@+id/signImgCIV"
+        app:layout_constraintTop_toBottomOf="@+id/signImgCIV"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/signInUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/boxshape"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/signInText"
+        app:layout_constraintEnd_toEndOf="@+id/signInText"
+        app:layout_constraintTop_toBottomOf="@+id/signInText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/signInPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/boxshape"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/signInUsername"
+        app:layout_constraintStart_toStartOf="@+id/signInUsername"
+        app:layout_constraintTop_toBottomOf="@+id/signInUsername"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
